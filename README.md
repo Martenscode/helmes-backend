@@ -8,15 +8,15 @@ I did not spend time setting it up on Docker - please let me know if that's nece
 Get it running very simply by:
 * start PSQL DB (dump.sql added)
 * run Spring Boot app in IDE
-* 'ng serve' in angular folder
+* `ng serve` in angular folder
 
 
 Set up PSQL DB credentials in application.properties or use the default:
-* URL = jdbc:postgresql://localhost:5432/postgres
-* USERNAME = postgres
-* PASSWORD = postgres
+* `URL = jdbc:postgresql://localhost:5432/postgres`
+* `USERNAME = postgres`
+* `PASSWORD = postgres`
 
-Swagger available at http://localhost:8080/swagger
+Swagger available at `http://localhost:8080/swagger`
 
 # Foreword
 
