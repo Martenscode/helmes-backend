@@ -51,6 +51,8 @@ I kept a simplistic approach to database with the structure:
 This keeps our database structural complexity low. 
 I could have added another column or table for relationships (or even store as JSON) but I figured it's better this way.
 
+* I did not do any user setup in database like granting certain accesses to certain users etc
+
 ## 2.2. Compose the "Sectors" selectbox using data from database
 
 The API returns a parent/child JSON structure, sorted alphabetically.
