@@ -10,6 +10,9 @@ Get it running very simply by:
 * run Spring Boot app in IDE
 * `ng serve` in angular folder
 
+Front-end is accessible from `http://localhost:4200/`
+Back-end is running on `http://localhost:8080/`
+
 
 Set up PSQL DB credentials in application.properties or use the default:
 * `URL = jdbc:postgresql://localhost:5432/postgres`
