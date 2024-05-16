@@ -43,9 +43,7 @@ The following architectural decisions of the solution are based on that.
 
 I kept a simplistic approach to database with the structure: 
 
-+----+----------------------+----------------------+
-| id |        name          |  parent_sector_id    |
-+----+----------------------+----------------------+
+| id | name | parent_sector_id |
 
 This keeps our database structural complexity low. 
 I could have added another column or table for relationships (or even store as JSON) but I figured it's better this way.
@@ -69,9 +67,7 @@ Validation done on front-end & back-end.
 
 ## 3.2. Store all input data to the database (Name, Sectors, Agree to terms)
 
-+-------+---------+----------------------+-------------------------+----------------------+
-|   id  |  UUID   |      user_name       |        sector_ids       |   agree_to_terms     |
-+-------+---------+----------------------+-------------------------+----------------------+
+| id | UUID | user_name | sector_ids | agree_to_terms |
 
 UUID is used to reference user for editing existing data.
 
