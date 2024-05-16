@@ -35,10 +35,9 @@ public class FormService {
         if (userDataDTO.getUuid() != null) {
             UserData existingUserData = userDataRepository.findByUuid(userDataDTO.getUuid());
             if (existingUserData != null) {
-                existingUserData = UserData.builder()
-                        .name(userDataDTO.getName())
-                        .sectorIds(userDataDTO.getSectorIds())
-                        .agreeToTerms(userDataDTO.isTerms()).build();
+                existingUserData.setName(userDataDTO.getName());
+                existingUserData.setSectorIds(userDataDTO.getSectorIds());
+                existingUserData.setAgreeToTerms(userDataDTO.isTerms());
 
                 UserData savedUser = userDataRepository.save(existingUserData);
                 log.warn("Updated user data for UUID={}", savedUser.getUuid());
